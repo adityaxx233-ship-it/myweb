@@ -23,7 +23,7 @@ color: #222;
 line-height: 1.7;
 }
 
-/* Header */ header {
+header {
 background: linear-gradient(135deg, #e63946, #b5172f); color: white;
 padding: 50px 20px; text-align: center;
 }
@@ -36,7 +36,7 @@ header p {
 font-size: 20px; opacity: 0.9;
  
 }
-/* Navigation */ nav {
+ nav {
 background: #1e293b; position: sticky;
 top: 0;
 z-index: 1000;
@@ -56,7 +56,7 @@ text-decoration: none; padding: 15px 18px; transition: 0.3s;
 nav a:hover { background: #e63946;
 }
 
-/* Layout */
+
 .container { width: 90%;
 max-width: 1200px; margin: 40px auto;
 }
@@ -81,7 +81,7 @@ p {
 margin-bottom: 15px;
 }
 
-/* Code */ pre {
+ pre {
 background: #0f172a; color: #e2e8f0; padding: 20px; border-radius: 8px; overflow-x: auto; margin: 15px 0;
 border-left: 5px solid #e63946;
 }
@@ -95,7 +95,7 @@ font-family: monospace;
  
 }
 
-/* Tables */ table {
+ table {
 width: 100%;
 border-collapse: collapse; margin: 20px 0;
 }
@@ -112,7 +112,7 @@ text-align: left;
 tr:nth-child(even) { background: #f8fafc;
 }
 
-/* Lists */ ul, ol {
+ ul, ol {
 margin: 15px 0 15px 25px;
 }
 
@@ -120,7 +120,7 @@ li {
 margin-bottom: 8px;
 }
 
-/* Cards */
+
 .cards {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;
@@ -138,7 +138,7 @@ border-radius: 10px;
 color: #d62839; margin-top: 0;
 }
 
-/* Note */
+
 .note {
 background: #fff3cd;
 border-left: 5px solid #ffc107; padding: 15px;
@@ -151,7 +151,7 @@ border-left: 5px solid #10b981; padding: 15px;
 margin: 20px 0; border-radius: 5px;
 }
 
-/* Roadmap */
+
 .roadmap {
 counter-reset: roadmap;
 }
@@ -169,12 +169,12 @@ background: #e63946; color: white;
 border-radius: 50%; text-align: center; line-height: 28px; font-weight: bold;
 }
 
-/* Footer */ footer {
+footer {
 background: #1e293b; color: white;
 text-align: center; padding: 30px; margin-top: 40px;
 }
 
-/* Mobile */
+
 @media (max-width: 768px) { header h1 {
 font-size: 35px;
 }
@@ -200,13 +200,11 @@ font-size: 13px;
 
 <body>
 
-<!-- HEADER -->
 <header>
-<h1>☕ Java Complete Guide</h1>
+<h1> Java Complete Guide</h1>
 <p>Learn Java from Basic to Advanced</p>
 </header>
 
-<!-- NAVIGATION -->
 <nav>
 <ul>
 <li><a href="#introduction">Introduction</a></li>
@@ -226,7 +224,6 @@ font-size: 13px;
 
 <div class="container">
 
-<!-- INTRODUCTION -->
 <section id="introduction">
 
 <h2>1. What is Java?</h2>
@@ -238,7 +235,7 @@ Java is a high-level, object-oriented programming language. It is widely used fo
 <div class="cards">
 
 <div class="card">
-<h3>☕ Object Oriented</h3>
+<h3> Object Oriented</h3>
 <p>Java is based heavily on classes and objects.</p>
 </div>
 
@@ -266,7 +263,7 @@ Java follows the idea "Write Once, Run Anywhere" because compiled Java bytecode 
 
 </section>
 
-<!-- HOW JAVA WORKS -->
+
 <section>
  
 <h2>2. How Java Works</h2>
@@ -298,7 +295,6 @@ JVM stands for Java Virtual Machine. It executes Java bytecode.
 
 </section>
 
-<!-- BASIC PROGRAM -->
 <section id="basic">
 
 <h2>3. Basic Java Program</h2>
@@ -329,7 +325,6 @@ System.out.println("Hello, World!");
 
 </section>
 
-<!-- VARIABLES -->
 <section id="variables">
 
 <h2>4. Variables and Data Types</h2>
@@ -408,8 +403,6 @@ String name = "Rahul";
 </p>
 
 </section>
-
-<!-- INPUT -->
 <section>
 
 <h2>5. Taking Input</h2>
@@ -435,8 +428,6 @@ sc.close();
 </code></pre>
 
 </section>
-
-<!-- OPERATORS -->
 <section id="operators">
 
 <h2>6. Operators</h2>
@@ -479,7 +470,6 @@ System.out.println(a + b); System.out.println(a - b); System.out.println(a * b);
 
 </section>
 
-<!-- CONDITIONS -->
 <section id="conditions">
 
 <h2>7. Conditions</h2>
@@ -532,8 +522,6 @@ System.out.println("Invalid day");
 </code></pre>
 
 </section>
-
-<!-- LOOPS -->
 <section id="loops">
 
 <h2>8. Loops</h2>
@@ -569,7 +557,6 @@ System.out.println(i); i++;
 
 </section>
 
-<!-- ARRAYS -->
 <section id="arrays">
 
 <h2>9. Arrays</h2>
@@ -602,8 +589,6 @@ for (int number : numbers) { System.out.println(number);
 </code></pre>
 
 </section>
-
-<!-- METHODS -->
 <section id="methods">
 
 <h2>10. Methods</h2>
@@ -632,8 +617,6 @@ System.out.println("Hello!");
 </code></pre>
  
 </section>
-
-<!-- OOP -->
 <section id="oops">
 
 <h2>11. Object-Oriented Programming</h2>
@@ -765,8 +748,6 @@ System.out.println("Car starts");
 </code></pre>
 
 </section>
-
-<!-- ACCESS MODIFIERS -->
 <section>
 
 <h2>12. Access Modifiers</h2>
@@ -802,8 +783,6 @@ System.out.println("Car starts");
 </table>
 
 </section>
-
-<!-- STRING -->
 <section>
 
 <h2>13. String</h2>
@@ -823,8 +802,6 @@ System.out.println(a.equals(b));
 </code></pre>
 
 </section>
-
-<!-- EXCEPTIONS -->
 <section id="exceptions">
 
 <h2>14. Exception Handling</h2>
@@ -857,8 +834,6 @@ System.out.println("Program finished");
 </ul>
 
 </section>
-
-<!-- COLLECTIONS -->
 <section id="collections">
 
 <h2>15. Collections</h2>
@@ -924,8 +899,6 @@ System.out.println(students.get(1));
 </code></pre>
 
 </section>
-
-<!-- GENERICS -->
 <section>
 
 <h2>16. Generics</h2>
@@ -942,8 +915,6 @@ names.add("Amit");
 </code></pre>
 
 </section>
-
-<!-- STATIC AND FINAL -->
 <section>
 
 <h2>17. static and final</h2>
@@ -971,8 +942,6 @@ public static void main(String[] args) { System.out.println(count);
 </code></pre>
 
 </section>
-
-<!-- LAMBDA -->
 <section>
 
 <h2>18. Lambda Expression</h2>
@@ -991,8 +960,6 @@ r.run();
 </code></pre>
 
 </section>
-
-<!-- STREAM -->
 <section>
  
 <h2>19. Stream API</h2>
@@ -1016,8 +983,6 @@ numbers.stream()
 </code></pre>
 
 </section>
-
-<!-- MULTITHREADING -->
 <section>
 
 <h2>20. Multithreading</h2>
@@ -1040,8 +1005,6 @@ public static void main(String[] args) { MyThread t = new MyThread(); t.start();
 </code></pre>
 
 </section>
-
-<!-- PACKAGES -->
 <section>
 
 <h2>21. Packages</h2>
@@ -1056,8 +1019,6 @@ import java.util.Scanner;
 </code></pre>
 
 </section>
-
-<!-- GARBAGE COLLECTION -->
 <section>
 
 <h2>22. Garbage Collection</h2>
@@ -1073,8 +1034,6 @@ You normally do not manually free Java objects like you commonly do with dynamic
 </div>
 
 </section>
-
-<!-- KEYWORDS -->
 <section>
 
 <h2>23. Important Java Keywords</h2>
@@ -1091,8 +1050,6 @@ continue return import package
 </code></pre>
 
 </section>
-
-<!-- ROADMAP -->
 <section id="roadmap">
 
 <h2>24. Java Learning Roadmap</h2>
@@ -1134,8 +1091,6 @@ continue return import package
 </ol>
 
 </section>
-
-<!-- PROJECT -->
 <section>
 
 <h2>25. Beginner Java Project</h2>
@@ -1173,8 +1128,6 @@ checkResult(marks); sc.close();
 </code></pre>
 
 </section>
-
-<!-- FINAL -->
 <section>
 
 <h2>26. What to Focus On</h2>
@@ -1215,7 +1168,7 @@ Syntax → Logic → OOP → Collections → Exceptions → Generics → Streams
 </section>
 </div>
 <footer>
-<p>☕ Java Complete Guide</p>
+<p>Java Complete Guide</p>
 <p>Learn • Practice • Build • Become a Java Developer</p>
 <p>©2026 All Rights Reserved Aditya Thakur</p>
 </footer>
